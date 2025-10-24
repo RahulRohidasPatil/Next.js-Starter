@@ -1,5 +1,6 @@
 "use cache"
 
+import SiteHeader from "@/components/site-header"
 import {
   Sidebar,
   SidebarContent,
@@ -9,7 +10,6 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
-  SidebarTrigger,
 } from "@/components/ui/sidebar"
 import { items } from "@/lib/sidebar-items"
 import { cn } from "@/lib/utils"
@@ -42,7 +42,7 @@ export default async function Layout({ children }: LayoutProps<"/">) {
         </SidebarContent>
       </Sidebar>
       <SidebarInset>
-        <SidebarTrigger type="button" />
+        <SiteHeader />
         {children}
       </SidebarInset>
     </SidebarProvider>

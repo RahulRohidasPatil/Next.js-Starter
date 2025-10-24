@@ -5,7 +5,7 @@ import Image from "next/image"
 export default async function Home() {
   return (
     <div className="flex items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex w-full max-w-3xl flex-col items-center justify-between space-y-67 bg-white px-16 py-32 sm:items-start dark:bg-black">
+      <main className="flex w-full max-w-3xl flex-col items-center justify-between space-y-62 bg-white px-16 py-32 sm:items-start dark:bg-black">
         <Image
           className="dark:invert"
           src="/next.svg"
