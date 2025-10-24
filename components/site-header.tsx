@@ -14,6 +14,7 @@ import { usePathname } from "next/navigation"
 import { Fragment } from "react"
 import { Separator } from "./ui/separator"
 import { SidebarTrigger } from "./ui/sidebar"
+import { ModeToggle } from "./mode-toggle"
 
 export default function SiteHeader() {
   const pathname = usePathname()
@@ -64,6 +65,7 @@ export default function SiteHeader() {
           })}
         </BreadcrumbList>
       </Breadcrumb>
+      <ModeToggle />
     </header>
   )
 }
